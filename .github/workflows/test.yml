@@ -30,3 +30,4 @@ jobs:
       - name: Lint and run tests
         run: |
           npm run lint
+          npm test
