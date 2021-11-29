@@ -13,6 +13,7 @@ cp .env.example .env
 ```
 
 - `PORT`: port for local development
+- `API_URL`: api url for requesting queries to backend
 
 > Run local severr for development
 
