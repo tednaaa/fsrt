@@ -4,7 +4,8 @@
     "dev": "cross-env NODE_ENV=development webpack serve",
     "prebuild": "rimraf build",
     "build": "cross-env NODE_ENV=production webpack",
-    "lint": "eslint --fix './src/**/*.{ts,tsx}'"
+    "lint": "eslint --fix './src/**/*.{ts,tsx}'",
+    "test": "jest --watch --coverage"
   },
   "dependencies": {
     "axios": "^0.24.0",
@@ -23,6 +24,7 @@
     "@babel/preset-env": "^7.16.4",
     "@babel/preset-react": "^7.16.0",
     "@babel/preset-typescript": "^7.16.0",
+    "@types/jest": "^27.0.3",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
     "@types/uuid": "^8.3.3",
@@ -40,6 +42,7 @@
     "eslint-plugin-react": "^7.27.1",
     "group-css-media-queries-loader": "^4.3.0",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^27.4.0",
     "mini-css-extract-plugin": "^2.4.5",
     "prettier": "^2.5.0",
     "sass": "^1.43.5",
