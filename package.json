@@ -4,7 +4,7 @@
     "dev": "cross-env NODE_ENV=development webpack serve",
     "prebuild": "rimraf build",
     "build": "cross-env NODE_ENV=production webpack",
-    "lint": "eslint --fix './src"
+    "lint": "eslint --fix './src'"
   },
   "dependencies": {
     "axios": "^0.24.0",
