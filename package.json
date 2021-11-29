@@ -5,7 +5,8 @@
     "prebuild": "rimraf build",
     "build": "cross-env NODE_ENV=production webpack",
     "lint": "eslint --fix './src/**/*.{ts,tsx}'",
-    "test": "jest --watch --coverage"
+    "test:watch": "jest --watch --coverage",
+    "test": "jest"
   },
   "dependencies": {
     "axios": "^0.24.0",
