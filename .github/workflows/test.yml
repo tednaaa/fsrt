@@ -25,9 +25,8 @@ jobs:
       - name: Set env vars, install packages and build
         run: |
           cp .env.example .env
-          npm ci
+          npm i
           npm run build
       - name: Lint and run tests
         run: |
           npm run lint
-          npm test
