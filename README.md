@@ -1,4 +1,4 @@
-[![Test](https://github.com/tednaaa/react-starter-template/actions/workflows/test.yml/badge.svg)](https://github.com/tednaaa/react-starter-template/actions/workflows/test.yml)
+[![Tests](https://github.com/tednaaa/react-starter-template/actions/workflows/test.yml/badge.svg)](https://github.com/tednaaa/react-starter-template/actions/workflows/test.yml)
 
 # Init project
 
