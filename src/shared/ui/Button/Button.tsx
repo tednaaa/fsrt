@@ -1,9 +1,14 @@
-import React, { FC } from 'react';
+import clsx from 'clsx';
+import React, { ButtonHTMLAttributes, FC } from 'react';
 import styles from './Button.module.scss';
 
-export const Button: FC = (props) => {
+interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
+  className?: string;
+}
+
+export const Button: FC<Props> = (props) => {
   return (
-    <button className={styles.button} {...props}>
+    <button className={clsx(styles.button, props.className)} {...props}>
       {props.children}
     </button>
   );
