@@ -32,8 +32,13 @@ export const RootPage = () => {
           <Button
             aria-label="button"
             onClick={() => {
-              setButtonValue(inputValue);
-              setInputValue('Hi');
+              if (inputValue.trim()) {
+                setButtonValue(inputValue);
+                setInputValue('Hi');
+
+                window.location.href =
+                  'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+              }
             }}
           >
             {buttonValue} :)

@@ -29,4 +29,29 @@ describe('Root page', () => {
     expect(button.textContent).toBe(`${MOCK_TEXT} :)`);
     expect(nameInput.value).toBe('Hi');
   });
+
+  it('should not call callback after button click if input value is empty', () => {
+    const MOCK_TEXT = 'text';
+    const MOCK_EMPTY_TEXT = '';
+    const MOCK_EMPTY_TEXT_WITH_SPACE = ' ';
+    render(<RootPage />);
+
+    const nameInput = screen.getByLabelText('Name input') as HTMLInputElement;
+    const button = screen.getByLabelText('button') as HTMLButtonElement;
+
+    fireEvent.change(button, { textContent: MOCK_TEXT });
+    fireEvent.change(nameInput, { target: { value: MOCK_EMPTY_TEXT } });
+    fireEvent.click(button);
+
+    expect(button.textContent.replace(' :)', '')).not.toBe(MOCK_EMPTY_TEXT);
+
+    fireEvent.change(nameInput, {
+      target: { value: MOCK_EMPTY_TEXT_WITH_SPACE },
+    });
+    fireEvent.click(button);
+
+    expect(button.textContent.replace(' :)', '')).not.toBe(
+      MOCK_EMPTY_TEXT_WITH_SPACE
+    );
+  });
 });
