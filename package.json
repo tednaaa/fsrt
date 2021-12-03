@@ -31,6 +31,7 @@
     "alloy",
     "focus-visible",
     "react-testing-library",
-    "react-router-dom"
+    "react-router-dom",
+    "cli"
   ]
 }
