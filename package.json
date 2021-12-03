@@ -2,7 +2,7 @@
   "name": "fsrt",
   "author": "And",
   "license": "MIT",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "bin": {
     "@tednaaa/fsrt": "cli/new.mjs",
     "fsrt": "cli/new.mjs"
