@@ -1,8 +1,7 @@
 node_modules
-/build
 
 .env
+my-app
 package-lock.json
-/coverage
 
 .DS_Store
