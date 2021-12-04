@@ -30,5 +30,6 @@ jobs:
           npm run build
       - name: Lint and run tests
         run: |
+          cd template
           npm run lint
           npm test
