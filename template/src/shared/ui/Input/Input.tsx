@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import React, { FC, InputHTMLAttributes } from 'react';
-import { useInput } from '@/shared/hooks';
 import styles from './Input.module.scss';
 
 interface Props extends InputHTMLAttributes<HTMLInputElement> {

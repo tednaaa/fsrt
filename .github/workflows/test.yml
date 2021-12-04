@@ -24,6 +24,7 @@ jobs:
 
       - name: Set env vars, install packages and build
         run: |
+          cd template
           cp .env.example .env
           npm i
           npm run build
