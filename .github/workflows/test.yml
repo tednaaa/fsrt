@@ -24,10 +24,12 @@ jobs:
 
       - name: Set env vars, install packages and build
         run: |
+          cd template
           cp .env.example .env
           npm i
           npm run build
       - name: Lint and run tests
         run: |
+          cd template
           npm run lint
           npm test

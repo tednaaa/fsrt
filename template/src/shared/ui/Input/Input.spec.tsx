@@ -1,6 +1,5 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import { useInput } from '@/shared/hooks';
 import { Input } from './Input';
 
 describe('Input component', () => {

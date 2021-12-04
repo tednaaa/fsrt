@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Container, Input } from '@/shared/ui';
-import { useInput } from '@/shared/hooks';
+import { useInput } from '@/shared/lib/hooks';
 
 export const RootPage = () => {
   const [buttonValue, setButtonValue] = useState('Click Me!');
